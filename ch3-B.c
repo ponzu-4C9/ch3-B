@@ -27,8 +27,8 @@ int main()
         int input_money[5] = {0};
         for(i = 0; i < sizeof(money_kind)/sizeof(int);i++){
             printf("%d-->",money_kind[i]);
-            scanf("%d",&input_money[i]);
-            envelopes[i] = envelopes[i] + input_money[i]; //封筒に硬貨を入れる
+            scanf("%d",&input_money[i]);//input_moneyに書き込み
+            envelopes[i] += input_money[i]; //封筒に硬貨を入れる
         }
         int sum = 0;
         for(i = 0; i < sizeof(money_kind)/sizeof(int);i++){
